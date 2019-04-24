@@ -63,6 +63,6 @@ end
 
 if (romValid) then
 	emu.print("Speedrun split timers started")
-	runner = string.sub(arg, 0, 12)
+	if (arg ~= nil) then runner = string.sub(arg, 0, 12) end
 	emu.registerafter(main)
 end
