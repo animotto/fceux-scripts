@@ -49,7 +49,7 @@ function main()
 	gui.text(195, 210, "Lv5: " .. timers[11])
 	gui.text(195, 222, "Total: " .. timers[12])
 
-	if (runner ~= "") then gui.text(25, 224, "Runner: " .. runner) end
+	if (runner ~= nil and runner ~= "") then gui.text(25, 224, "Runner: " .. runner) end
 end
 
 romValid = true
